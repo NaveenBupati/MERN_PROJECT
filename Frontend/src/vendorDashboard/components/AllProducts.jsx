@@ -15,7 +15,7 @@ const AllProducts = () => {
         const fetchProducts = async () => {
             try {
                 const firmId = localStorage.getItem("firmId");
-                const response = await axios.get(`http://localhost:8080/product/firmProducts/${firmId}`);
+                const response = await axios.get(`https://backend-nodejs-restaurent-register-apis.onrender.com/product/firmProducts/${firmId}`);
                 const newProducts = response.data;
                 setProducts(newProducts.products);
             } catch (error) {

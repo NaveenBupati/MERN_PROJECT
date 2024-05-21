@@ -22,7 +22,7 @@ const VendorRegistration = ({showLoginHandler}) => {
     try {
 
       //'http://localhost:8080/vendor/register/ -- for local we should cors in backend
-      const response = await fetch('http://localhost:8080/vendor/register/', {
+      const response = await fetch('https://backend-nodejs-restaurent-register-apis.onrender.com/vendor/register/', {
         method: 'POST',
         headers: {
           'Content-type': 'application/json'

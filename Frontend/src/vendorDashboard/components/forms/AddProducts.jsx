@@ -64,7 +64,7 @@ const AddProduct = () => {
     formDataToSubmit.append('image', formData.image);
 
     try {
-      const response = await fetch(`http://localhost:8080/product/addProduct/${firmId}`, {
+      const response = await fetch(`https://backend-nodejs-restaurent-register-apis.onrender.com/product/addProduct/${firmId}`, {
         method: 'POST',
         body: formDataToSubmit
       });

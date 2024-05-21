@@ -59,7 +59,7 @@ const AddFirm = () => {
     formDataToSubmit.append('image', formData.image);
 
     try {
-      const response = await fetch('http://localhost:8080/firm/addfirm', {
+      const response = await fetch('https://backend-nodejs-restaurent-register-apis.onrender.com/firm/addfirm', {
         method: 'POST',
         headers: {
           'token': token,
